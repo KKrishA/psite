@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krish Arora - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="college-life.js" defer></script>
+  </head>
+  <body>
+    <main class="portfolio-container">
+      <header class="main-header">
+        <h1 class="logo">Krish Arora</h1>
+        <nav class="main-nav">
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#college-life" class="nav-link">College Life</a>
+          <a href="resume_psite.pdf" class="nav-link">Resume</a>
+          <!-- <img src="nighttime.svg" alt="Menu Icon" class="menu-icon"/> -->
+        </nav>
+
+        <script>
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+              anchor.addEventListener('click', function(e) {
+                  e.preventDefault();
+    
+                  const targetId = this.getAttribute('href');
+                  const targetElement = document.querySelector(targetId);
+    
+                  if (targetElement) {
+                      window.scrollTo({
+                          top: targetElement.offsetTop,
+                          behavior: 'smooth'
+                      });
+                  }
+              });
+          });
+      </script>
+
+        <div class="background-blob blob-1">
+          <svg width="1505" height="1416" viewBox="0 0 1505 1416" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_765_99)">
+              <path d="M904.208 382.182C1065.19 510.412 1295.05 872.662 1167.28 1033.17C1039.5 1193.68 602.47 1091.67 441.487 963.435C280.503 835.205 253.584 601.136 381.361 440.627C509.138 280.118 743.225 253.951 904.208 382.182Z" fill="#7D6D61" fill-opacity="0.44"/>
+            </g>
+            <defs>
+              <filter id="filter0_f_765_99" x="0.687256" y="0.810385" width="1503.76" height="1414.69" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_765_99"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        
+        <div class="background-blob blob-2">
+          <svg width="1347" height="1449" viewBox="0 0 1347 1449" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_740_3)">
+              <path d="M234.834 352.315C457.313 265.144 952.072 237.631 1034.75 448.765C1117.43 659.899 756.714 1029.73 534.235 1116.9C311.756 1204.07 64.3782 1103.58 -18.2991 892.444C-100.976 681.31 12.3551 439.486 234.834 352.315Z" fill="#7D6D61" fill-opacity="0.5"/>
+            </g>
+            <defs>
+              <filter id="filter0_f_740_3" x="-345.332" y="-12.8542" width="1692.16" height="1461.16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_740_3"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </header>
+
+      <section class="title-section">
+        <h2 class="typing-text">Hi! I am Krish.</h2>
+        <p class="title-description">
+          I'm a student at UC Berkeley pursuing a degree in Data Science -
+          Applied Mathematics & Modeling. My professional interests lie in
+          software engineering, AI/ML engineering, and data analytics. My
+          research experience primarily focuses on wearable biotechnology and
+          neural network optimization. Feel free to browse around and connect with me!
+        </p>
+
+        <div class="social-links">
+          <a href="https://github.com/KKrishA" class="social-link">
+            <img src="github.svg" alt="GitHub" class="social-icon"/>
+            <span class="social-text">github</span>
+            <img src="arrow.svg" alt="Arrow" class="arrow-icon"/>
+          </a>
+          <a href="www.linkedin.com/in/karora27"
+             class="social-link">
+            <img src="linkedin.svg" alt="LinkedIn" class="social-icon"/>
+            <span class="social-text">linkedin</span>
+            <img src="arrow.svg" alt="Arrow" class="arrow-icon"/>
+          </a>
+          <a href="https://www.instagram.com/krishh.aroraa/" class="social-link">
+            <img src="insta.svg" alt="Instagram" class="social-icon"/>
+            <span class="social-text">instagram</span>
+            <img src="arrow.svg" alt="Arrow" class="arrow-icon"/>
+          </a>
+          <a href="mailto:karora27@berkeley.edu" class="social-link">
+            <img src="mail.svg" alt="Email" class="social-icon"/>
+            <span class="social-text">mail</span>
+            <img src="arrow.svg" alt="Arrow" class="arrow-icon"/>
+          </a>
+        </div>
+<!----
+        <div class="image-container">
+          <img src="krish.jpeg" alt="Krish Arora">
+        </div>
+      </section>
+-->
+
+      <section id="experience" class="experience-section">
+        <h2 class="section-title">Experience</h2>
+        <div class="carousel-container">
+          <button class="carousel-arrow carousel-arrow-left" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+
+          <div class="experience-carousel">
+            <div class="carousel-track">
+              <article class="experience-card">
+                <img src="amazon.png" alt="Amazon AWS Logo" class="company-logo"/>
+                <h3 class="company-name">Amazon (AWS)</h3>
+                <h4 class="job-title">Software Development Engineer</h4>
+                <div class="separator"></div>
+                <p class="job-description">Incoming SDE Intern; Summer 2025!</p>
+              </article>
+
+              <article class="experience-card">
+                <img src="novo.svg" alt="Novo Nordisk Logo" class="company-logo"/>
+                <h3 class="company-name">Novo Nordisk</h3>
+                <h4 class="job-title">Software Engineer (Contract)</h4>
+                <div class="separator"></div>
+                <p class="job-description">
+                  Performed large-scale web scraping of 10,000+ user-generated 
+                  reviews on GLP-1 agonists from Novo Nordisk, Eli Lilly, 
+                  etc., applying RoBERTa embeddings with LDA via NLTK for 
+                  unsupervised topic modeling to extract drug-specific adverse 
+                  event patterns and sentiment distributions.
+                  Visualized results through cluster and frequency analysis.
+                </p>
+              </article>
+
+              <article class="experience-card">
+                <img src="qualcomm.png" alt="Qualcomm Logo" class="company-logo"/>
+                <h3 class="company-name">Qualcomm</h3>
+                <h4 class="job-title">Software Engineer (Contract)</h4>
+                <div class="separator"></div>
+                <p class="job-description">
+                  Redesigned Qualcomm Academy's UI/UX with high-fidelity Figma
+                  mockups, increasing global consumer enrollment by 60%.
+                  Developed financial models analyzing market demand, competitor
+                  pricing, and profitability through sensitivity analysis.
+                </p>
+              </article>
+
+              <article class="experience-card">
+                <img src="coupang.png" alt="Coupang Logo" class="company-logo"/>
+                <h3 class="company-name">Coupang</h3>
+                <h4 class="job-title">Technical Product Manager</h4>
+                <div class="separator"></div>
+                <p class="job-description">
+                  Engineered an autonomous pricing scraper using Playwright 
+                  and Selenium with headless browsers, integrating IP rotation, 
+                  randomized fingerprinting, and anti-bot evasion techniques to 
+                  bypass proxies and firewalls for reliable extraction of 
+                  competitor product pricing data.
+                </p>
+              </article>
+
+              <article class="experience-card">
+                <img src="ore.png" alt="Outer Rim Logo" class="company-logo"/>
+                <h3 class="company-name">Outer Rim Exploration</h3>
+                <h4 class="job-title">Machine Learning Intern</h4>
+                <div class="separator"></div>
+                <p class="job-description">
+                  Scraped geospatial muon flux data to train a CNN for
+                  underground mineral detection, achieving 92.3% accuracy and
+                  89.4% precision. Used Bayesian/MCMC inversion modeling in PyMC
+                  to generate 3D subsurface models with a &lt;3% error margin.
+                </p>
+              </article>
+
+              <article class="experience-card">
+                <img src="momentus.png" alt="Momentus Technologies Logo" class="company-logo"/>
+                <h3 class="company-name">Momentus Technologies</h3>
+                <h4 class="job-title">Product Management Intern</h4>
+                <div class="separator"></div>
+                <p class="job-description">
+                  Used Pendo to analyze financial and usage metrics for 12 
+                  core products, leading to a 25% increase in user revenue, 
+                  while cleaning and visualizing data with heatmaps and 
+                  implementing a Linear Regression model to address user 
+                  dissatisfaction, boosting engagement by 35%.
+                </p>
+              </article>
+            </div>
+          </div>
+          
+          <button class="carousel-arrow carousel-arrow-right" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <script src="carousel.js"></script>
+      
+      <section id="projects" class="projects-section">
+        <h2 class="section-title projecs-title">Projects</h2>
+        <!-- > <h3 class="subsection-title">Research Projects</h3> <-->
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">Deep Neural<br />Networks</h3>
+            <p class="project-description">
+              Led research on tensor decomposition for deep neural network
+              compression and optimization, developing an algorithm to enhance
+              efficiency for low-power devices by reshaping tensors and
+              extracting latent information
+            </p>
+            <a href="tensor_dnn_abstract.pdf" class="project-link"><b><span class="hover-link">[abstract]</span></b></a>
+
+            <div class="framework-icons">
+              <img src="python.png" alt="Framework 1" class="framework-icon">
+              <img src="tensorflow.png" alt="Framework 2" class="framework-icon">
+              <img src="pytorch.png" alt="Framework 3" class="framework-icon">
+              <img src="pandas.png" alt="Framework 4" class="framework-icon">
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">
+              Vitamin B<span class="superscript">12</span><br />Deficiency
+            </h3>
+            <p class="project-description">
+              Developed a FRET-based fluorescence nanosensor for rapid Vitamin
+              B<sub>12</sub> detection, mimicking a glucose meter by analyzing blood
+              samples for B<sub>12</sub>'s cobalt structure and deficiency markers,
+              enabling accessible diagnostics for patients in need
+              <br>
+            </p>
+            <a href="940_poster.pdf" class="project-link"><b><span class="hover-link">[technical poster]</span></b></a>
+
+            <div class="framework-icons">
+              <img src="autocad.png" alt="Framework 1" class="framework-icon">
+              <img src="python.png" alt="Framework 2" class="framework-icon">
+              <img src="figma.png" alt="Framework 3" class="framework-icon">
+            </div>
+          </article>
+        </div>
+
+       <!-- > <h3 class="subsection-title">Personal Projects</h3> <-->
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">2-D World<br />Generator</h3>
+            <p class="project-description">
+              Designed and built a seed-based 2D tile exploration engine with
+              interactive avatars, dynamic action tracking, and a 'lights off'
+              renderer for immersive, line-of-sight gameplay
+            </p>
+            <a href="https://github.com/KKrishA/2-D-World-Generator" class="project-link"><b><span class="hover-link">[github]</span></b></a>
+            <div class="framework-icons">
+              <img src="java.png" alt="Framework 1" class="framework-icon">
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">MD&A<br />Analysis</h3>
+            <p class="project-description">
+              Created an NLP model through GESIM and NLTK to analyze MD&A length
+              trends for startups, leveraging sentiment analysis and readability
+              metrics for performance prediction
+            </p>
+            <a href="https://github.com/KKrishA/GKA" class="project-link"><b><span class="hover-link">[github]</span></b></a>
+            <div class="framework-icons">
+              <img src="python.png" alt="Framework 1" class="framework-icon">
+              <img src="nltk.png" alt="Framework 2" class="framework-icon">
+              <img src="sql.png" alt="Framework 3" class="framework-icon">
+              <img src="pandas.png" alt="Framework 4" class="framework-icon">
+              <img src="tensorflow.png" alt="Framework 5" class="framework-icon">
+              <img src="mongo.png" alt="Framework 6" class="framework-icon">
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">Email<br />Classification</h3>
+            <p class="project-description">
+              Engineered and optimized linear and logistic regression models for spam email
+              detection, leveraging GridSearchCV for hyperparameter tuning, one-hot 
+              encoding for feature engineering, and data cleaning techniques to 
+              remove HTML tags, achieving 88% accuracy and an AUC of 0.87
+            </p>
+            <a href="https://github.com/KKrishA/spam-email-classifier" class="project-link"><b><span class="hover-link">[github]</span></b></a>
+            <div class="framework-icons">
+              <img src="python.png" alt="Framework 1" class="framework-icon">
+              <img src="pandas.png" alt="Framework 2" class="framework-icon">
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">OsteoX<br />& Agrify</h3>
+            <p class="project-description">
+              Designed a wearable biosensor using MB-ssDNA and estrogen-specific
+              aptamers to detect estradiol levels for real-time osteoporosis
+              analysis via app integration, along with a laser-based mycotoxin
+              detector with carbon nanotubes and infrared fluorescence
+            </p>
+            <a href="bt_fa23_final_deliverables.pdf" class="project-link"><b><span class="hover-link">[pitch decks]</span></b></a>
+            <div class="framework-icons">
+              <img src="autocad.png" alt="Framework 1" class="framework-icon">
+              <img src="python.png" alt="Framework 2" class="framework-icon">
+              <img src="figma.png" alt="Framework 3" class="framework-icon">
+              <img src="pandas.png" alt="Framework 6" class="framework-icon">
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="college-life" class="college-life-section">
+        <h2 class="section-title">College Life</h2>
+        <div class="college-grid">
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic1.jpeg" alt="College Life 1" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic2.jpeg" alt="College Life 2" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic3.jpeg" alt="College Life 3" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic4.jpeg" alt="College Life 4" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic5.jpeg" alt="College Life 5" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic6.jpeg" alt="College Life 6" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic7.jpeg" alt="College Life 7" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic8.jpeg" alt="College Life 8" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic9.jpeg" alt="College Life 9" class="hover-image" />
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic10.jpeg" alt="College Life 10" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic11.jpeg" alt="College Life 11" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic12.jpeg" alt="College Life 12" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic13.jpeg" alt="College Life 13" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic14.jpeg" alt="College Life 14" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic15.jpeg" alt="College Life 15" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic16.jpeg" alt="College Life 16" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic17.jpeg" alt="College Life 17" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic18.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic19.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic20.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic21.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic22.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic23.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+          <div class="college-square">
+            <div class="square-content"></div>
+            <img src="pic24.jpeg" alt="College Life 18" class="hover-image"/>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const typingText = document.querySelector(".typing-text");
+        setTimeout(() => {
+        typingText.classList.add("finished");
+        typingText.style.borderRight = "none"; 
+      });
+    });
+  </script>
+  </body>
+</html>
